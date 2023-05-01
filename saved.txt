@@ -4,3 +4,17 @@ https://www.youtube.com/watch?v=3GsKEtBcGTk
 https://dcode.domenade.com/tutorials/how-to-create-a-login-signup-form-with-html-css-javascript
 
 https://www.youtube.com/watch?v=UCI7K8f_u4I
+
+    let email = document.getElementById('signupEmail').value;
+    let pass = document.getElementById('signupPass').value;
+  
+    if (email == "admin@gmail.com" && pass == "admin"){
+      window.alert("Successfully Registered!")
+      
+      document.getElementById('signupEmail').value = "";
+      document.getElementById('signupPass').value = "";
+  
+    } else {
+      window.alert("Please fill-out the form!")
+    }
+  }
